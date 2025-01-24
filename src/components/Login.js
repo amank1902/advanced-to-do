@@ -20,7 +20,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card">
         <div className="login-header">
-          <img src="/logo.svg" alt="DoIt" className="login-logo" />
+          <img src="/logo.png" alt="DoIt" className="login-logo" />
           <h1>Welcome Back</h1>
           <p>Please enter your details to continue</p>
         </div>

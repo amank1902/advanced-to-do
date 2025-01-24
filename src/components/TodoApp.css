@@ -184,3 +184,13 @@
   padding-left: 0.75rem;
 }
 
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+.empty-state h2 {
+  margin-bottom: 1rem;
+}
+

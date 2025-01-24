@@ -18,3 +18,8 @@ export const setTaskImportant = (id) => ({
   payload: id,
 })
 
+export const addList = (listName) => ({
+  type: "ADD_LIST",
+  payload: listName,
+})
+

@@ -11,7 +11,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           <span></span>
           <span></span>
         </button>
-        <img src="/logo.svg" alt="DoIt" className="logo" />
+        <img src="/logo.png" alt="DoIt" className="logo" />
       </div>
 
       <div className="navbar-right">
