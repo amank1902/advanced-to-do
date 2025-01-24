@@ -86,8 +86,10 @@ This project currently does not use any external APIs for data fetching. All dat
 ## Getting Started
 
 1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+2. Install dependencies:
+   `npm install`
+3. Start the development server:
+ `npm start`
 
 ## Future Improvements
 
@@ -97,11 +99,4 @@ This project currently does not use any external APIs for data fetching. All dat
 - Implement drag-and-drop for task reordering
 - Add data visualization for task completion statistics
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
