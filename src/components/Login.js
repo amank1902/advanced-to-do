@@ -1,20 +1,25 @@
-import React, { useState } from "react"
-import { useDispatch } from "react-redux"
-import { useNavigate } from "react-router-dom"
-import { login } from "../actions/authActions"
-import "./Login.css"
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { login } from "../actions/authActions";
+import "./Login.css";
 
 const Login = () => {
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    dispatch(login(username, password))
-    navigate("/")
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // Dispatch the login action and wait for it to complete
+      await dispatch(login(username, password));
+      navigate("/"); // Navigate to the home page on successful login
+    } catch (error) {
+      alert("Invalid credentials! Please try again."); // Show an error message on failure
+    }
+  };
 
   return (
     <div className="login-container">
@@ -72,8 +77,7 @@ const Login = () => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
-
+export default Login;
