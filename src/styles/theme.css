@@ -1,0 +1,48 @@
+:root {
+  /* Light Theme */
+  --light-background: #f8faf7;
+  --light-sidebar-bg: #ffffff;
+  --light-text-primary: #1d1f1e;
+  --light-text-secondary: #6b6f6c;
+  --light-border: #e5e9e7;
+  --light-hover: #f4f6f4;
+
+  /* Dark Theme */
+  --dark-background: #1c1c1c;
+  --dark-sidebar-bg: #242424;
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #a1a1a1;
+  --dark-border: #2d2d2d;
+  --dark-hover: #2a2a2a;
+
+  /* Common */
+  --primary: #36b37e;
+  --error: #ff5630;
+  --warning: #ffab00;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  --background: var(--light-background);
+  --sidebar-bg: var(--light-sidebar-bg);
+  --text-primary: var(--light-text-primary);
+  --text-secondary: var(--light-text-secondary);
+  --border: var(--light-border);
+  --hover: var(--light-hover);
+}
+
+body.dark {
+  --background: var(--dark-background);
+  --sidebar-bg: var(--dark-sidebar-bg);
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --border: var(--dark-border);
+  --hover: var(--dark-hover);
+}
+

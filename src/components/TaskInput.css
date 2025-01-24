@@ -1,0 +1,37 @@
+.task-input {
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .task-input-field {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .priority-select {
+    width: 120px;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .add-task-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--accent-green);
+    color: white;
+    cursor: pointer;
+  }
+  
+  

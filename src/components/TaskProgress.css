@@ -1,0 +1,42 @@
+.task-progress {
+    text-align: center;
+  }
+  
+  .circular-chart {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  
+  .circular-chart path {
+    transition: stroke-dasharray 0.3s ease;
+  }
+  
+  .progress-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+  
+  .pending::before,
+  .done::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .pending::before {
+    background: var(--border);
+  }
+  
+  .done::before {
+    background: var(--primary);
+  }
+  
+  
