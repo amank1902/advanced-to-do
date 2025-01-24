@@ -15,9 +15,9 @@ const Login = () => {
     try {
       // Dispatch the login action and wait for it to complete
       await dispatch(login(username, password));
-      navigate("/"); // Navigate to the home page on successful login
+      navigate("/"); 
     } catch (error) {
-      alert("Invalid credentials! Please try again."); // Show an error message on failure
+      alert("Invalid credentials! Please try again."); 
     }
   };
 

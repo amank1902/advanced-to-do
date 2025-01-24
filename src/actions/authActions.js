@@ -1,23 +1,19 @@
 export const login = (username, password) => {
-    return (dispatch) => {
-      // Simulating an API call
+  return (dispatch) => {
+    return new Promise((resolve, reject) => {
       setTimeout(() => {
-        dispatch({
-          type: "LOGIN_SUCCESS",
-          payload: { username },
-        })
-        localStorage.setItem("isAuthenticated", "true")
-        localStorage.setItem("user", JSON.stringify({ username }))
-      }, 1000)
-    }
-  }
-  
-  export const logout = () => {
-    return (dispatch) => {
-      dispatch({ type: "LOGOUT" })
-      localStorage.removeItem("isAuthenticated")
-      localStorage.removeItem("user")
-    }
-  }
-  
-  
+        if (username === "test" && password === "1234") { // Mock validation
+          dispatch({
+            type: "LOGIN_SUCCESS",
+            payload: { username },
+          });
+          localStorage.setItem("isAuthenticated", "true");
+          localStorage.setItem("user", JSON.stringify({ username }));
+          resolve(); // Login successful
+        } else {
+          reject(); // Login failed
+        }
+      }, 1000);
+    });
+  };
+};
