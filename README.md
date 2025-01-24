@@ -87,9 +87,13 @@ This project currently does not use any external APIs for data fetching. All dat
 
 1. Clone the repository
 2. Install dependencies:
-   `npm install`
+   
+   ```bash
+   npm install
 3. Start the development server:
- `npm start`
+   
+   ```bash
+    npm start
 
 ## Future Improvements
 
