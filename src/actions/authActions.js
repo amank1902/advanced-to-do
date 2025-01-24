@@ -2,7 +2,7 @@ export const login = (username, password) => {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (username === "test" && password === "1234") { // Mock validation
+        if (username) { // Only checks if a username is entered
           dispatch({
             type: "LOGIN_SUCCESS",
             payload: { username },
@@ -11,7 +11,7 @@ export const login = (username, password) => {
           localStorage.setItem("user", JSON.stringify({ username }));
           resolve(); // Login successful
         } else {
-          reject(); // Login failed
+          reject(); // Login failed if no username is provided
         }
       }, 1000);
     });
